@@ -49,15 +49,15 @@ public class DoubleArray {
 
 		// List와 팀 이름을 갖는 Map을 생성해보자
 		Map<String, Object> map1 = new HashMap<String, Object>();
-		map1.put("team", "두산");
+		map1.put("team", "서울두산");
 		map1.put("player", DS);
 
 		Map<String, Object> map2 = new HashMap<String, Object>();
-		map1.put("team", "인천SK");
-		map1.put("player", SK);
+		map2.put("team", "인천SK");
+		map2.put("player", SK);
 
 		Map<String, Object> map3 = new HashMap<String, Object>();
-		map3.put("team", "한화");
+		map3.put("team", "대전한화");
 		map3.put("player", HH);
 
 		// Map의 List를 생성한다
@@ -66,10 +66,10 @@ public class DoubleArray {
 		kbo.add(map2);
 		kbo.add(map3);
 
-		// 출력
+		// 출력 
 		for (Map<String, Object> maps : kbo) {
-			System.out.print(maps.get("team") + ":");
-			ArrayList<String> p = (ArrayList<String>) maps.get("player");
+			System.out.print(maps.get("team") + ":"); // key를 가져오는 과정
+			ArrayList<String> p = (ArrayList<String>) maps.get("player"); // key에 맞는 value가 리스트 형태기 때문에 리스트의 리스트를 까주는 작업
 			for (String temp : p) {
 				System.out.print(temp + "\t");
 			}
