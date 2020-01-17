@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>주석</comment>
+<entry key="team">두산베어스</entry>
+<entry key="name">페르난데스</entry>
+</properties>
